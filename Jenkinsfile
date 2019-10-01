@@ -2,19 +2,14 @@ pipeline {
   agent any
   stages {
   stage('Stage 1') {
-      steps {
-        script {
+      steps [
           bat "javac Hello.java"
-        }
       }
     }
   stage('Stage 2') {
-      steps {
-        script {
-
+    steps {
           bat "java Hello"
           bat "javac Hello2.java"
-        }
       }
     }
     stage('Stage 3'){
@@ -25,4 +20,4 @@ pipeline {
       }
     }
   }
-
+}
