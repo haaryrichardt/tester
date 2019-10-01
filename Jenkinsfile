@@ -14,8 +14,14 @@ pipeline {
 
           bat "java Hello"
           bat "javac Hello2.java"
-          bat "java Hello2"
         }
+      }
+    }
+    stage('Stage 3'){
+      steps{
+        echo "This is stage 3"
+        bat "java Hello2"
+ 
       }
     }
   }
