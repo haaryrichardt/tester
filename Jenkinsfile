@@ -13,8 +13,8 @@ pipeline {
         script {
 
           bat "java Hello"
-          bat "javac Hello.java"
-          bat "java Hello"
+          bat "javac Hello2.java"
+          bat "java Hello2"
         }
       }
     }
