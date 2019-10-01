@@ -5,14 +5,16 @@ pipeline {
       steps {
         script {
           bat "javac Hello.java"
-          bat "java Hello"
         }
       }
     }
   stage('Stage 2') {
       steps {
         script {
-          echo 'Stage 2'
+
+          bat "java Hello"
+          bat "javac Hello.java"
+          bat "java Hello"
         }
       }
     }
